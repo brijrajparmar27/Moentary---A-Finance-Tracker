@@ -1,0 +1,80 @@
+.Home {
+  /* background-color: blue; */
+  padding-top: 80px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-areas: "cards addnew";
+  gap: 50px;
+}
+.Home .left_contain {
+  padding-top: 70px;
+  grid-area: cards;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.Home .right_contain {
+  grid-area: addnew;
+  /* background-color: blueviolet; */
+}
+.Home .card_contain {
+  height: 100%;
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.Home .anim_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.Home .empty_contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+  .Home {
+    /* background-color: blue; */
+    display: block;
+    padding-top: 80px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "cards"
+      "addnew";
+    gap: 0px;
+  }
+
+  .Home .card_contain {
+    align-items: center;
+  }
+  .Home .left_contain {
+    padding-top: 0px;
+  }
+
+  .Home .right_contain {
+    grid-area: addnew;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
+  }
+}
+
+@media only screen and (max-width:1000px){
+  .Home .anim_contain{
+    width: 90%;
+  }
+}

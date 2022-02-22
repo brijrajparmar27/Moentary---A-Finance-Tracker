@@ -1,0 +1,33 @@
+.Header{
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.678);
+    box-shadow: 0px 0px 10px 2px rgb(197, 197, 197);
+}
+.Header .logout_btn{
+    transition: 0.3s all linear;
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    border: none;
+    outline: 2px solid tomato;
+    background-color: transparent;
+    color: red;
+    font-weight: 300;
+    /* letter-spacing: .5px; */
+}
+.Header .logout_btn:hover{
+    box-shadow: 0px 0px 10px 2px rgb(255, 202, 202);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(255, 74, 42);
+    color: white;
+}
